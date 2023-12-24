@@ -1,3 +1,7 @@
+![preview](https://github.com/rollmate/electron-angular-boilerplate/assets/129092604/bf43717c-cf30-4ddb-b136-956503d45486)
+
+## Introduction
+
 [<img src="https://blog.ninja-squad.com/assets/images/angular_gradient.png" alt="Angular Logo" width="80"/>](https://angular.dev/)
 [<img src="https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg" alt="Electron Logo" width="80"/>](https://electronjs.org/)
 
