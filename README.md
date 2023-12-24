@@ -1,27 +1,88 @@
-# Ngtron
+[<img src="https://blog.ninja-squad.com/assets/images/angular_gradient.png" alt="Angular Logo" width="80"/>](https://angular.dev/)
+[<img src="https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg" alt="Electron Logo" width="80"/>](https://electronjs.org/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+Electron Angular Boilerplate uses Electron, Angular and esbuild.
 
-## Development server
+Includes Typescript, ESLint, Prettier, SASS, Hot reload
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+With this sample, you can:
 
-## Code scaffolding
+- Run your app in a local development environment with Hot reload
+- Run your app in a production environment
+- Linting and code formatting out of the box
+- Package your app into an executable file for Linux, Windows & Mac
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Version compatibility
 
-## Build
+| Branch | [Angular](https://angular.io/guide/versions) | [Electron](https://www.electronjs.org/docs/latest/tutorial/electron-timelines) | NodeJS                |
+|--------|----------------------------------------------|--------------------------------------------------------------------------------|-----------------------|
+| main   | 17.0.x                                       | 28.0.x                                                                         | ^18.18.0 \|\| ^20.9.0 |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Install
 
-## Running unit tests
+Clone the repo and install dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+``` bash
+git clone https://github.com/rollmate/electron-angular-boilerplate.git your-project-name
+cd your-project-name
+npm install
+```
 
-## Running end-to-end tests
+## Linting and code formatting
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[Setup ESLint in WebStorm](https://blog.jetbrains.com/webstorm/2016/08/using-external-tools/#set_up_eslint_to_autofix_files)
 
-## Further help
+## Starting Development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Builds and serves your application, rebuilding on file changes:
+
+``` bash
+npm start
+```
+
+## Debugging
+
+Renderer processes can be debugged using Chromium DevTools.
+
+The main process can be debugged via command:
+
+``` bash
+npm run debug
+```
+
+Once your app is active, open `chrome://inspect` in any Chromium-based browser
+to attach a debugger to the main process of your app.
+
+## Packaging for Production
+
+To package apps for the local platform:
+
+``` bash
+npm run build
+```
+
+## Updates
+
+There is no need to do any special steps to update Angular and Electron.
+Use standard update flows for each framework.
+
+## Project structure
+
+| Folder | Description                                |
+|--------|--------------------------------------------|
+| main   | Electron main process folder (NodeJS)      |
+| src    | Electron renderer process folder (Angular) |
+
+## Basic Included Commands
+
+| Command       | Description                                                                  |
+|---------------|------------------------------------------------------------------------------|
+| npm start     | Builds and serves your application, rebuilding on file changes               |
+| npm run debug | Builds and serves your application in debug mode, rebuilding on file changes |
+| npm run build | Package your application into a platform-specific executable bundle          |
+| npm run lint  | Runs linting tools on application code                                       |
+| npm run test  | Runs Angular unit tests in a project                                         |
+
+## License
+
+MIT © Rollmate

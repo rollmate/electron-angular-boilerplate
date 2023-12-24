@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'ngtron' title`, () => {
+  it(`should have the 'electron-angular-boilerplate' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ngtron');
+    expect(app.title).toEqual('electron-angular-boilerplate');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ngtron');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, electron-angular-boilerplate'
+    );
   });
 });
